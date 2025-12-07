@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# הפניה למפת האתר 
+Sitemap: https://sultan-appliances.co.il/sitemap.xml
