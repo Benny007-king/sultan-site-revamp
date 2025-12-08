@@ -11,12 +11,23 @@ const Footer = () => {
           <p className="text-muted-foreground mb-3">
             © {new Date().getFullYear()} סולטן חשמל ומיזוג – כל הזכויות שמורות
           </p>
-          <button
-            onClick={() => setIsPrivacyOpen(true)}
-            className="text-muted-foreground/70 hover:text-primary transition-colors text-sm border-b border-transparent hover:border-primary"
-          >
-            מדיניות פרטיות
-          </button>
+        <div className="flex items-center justify-center gap-4">
+            <button
+              onClick={() => setIsPrivacyOpen(true)}
+              className="text-muted-foreground/70 hover:text-primary transition-colors text-sm border-b border-transparent hover:border-primary"
+            >
+              מדיניות פרטיות
+            </button>
+            <span className="text-muted-foreground/50">|</span>
+            <a
+              href="https://www.nagish.co.il/statement/Xp4KZbAPBW"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground/70 hover:text-primary transition-colors text-sm border-b border-transparent hover:border-primary"
+            >
+              הצהרת נגישות
+            </a>
+          </div>
         </div>
       </footer>
       
