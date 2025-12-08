@@ -180,7 +180,16 @@
   }
 
   /* WhatsApp Button */
-  .whatsapp-float {
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+.whatsapp-float-old {
     @apply fixed bottom-6 left-6 z-50 w-16 h-16 rounded-full;
     @apply bg-[hsl(var(--whatsapp))] text-white flex items-center justify-center;
     @apply shadow-lg transition-all duration-300;
